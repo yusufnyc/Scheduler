@@ -1,4 +1,4 @@
-import web, twilio.twiml
+import web
 from web import form
 
 urls=(

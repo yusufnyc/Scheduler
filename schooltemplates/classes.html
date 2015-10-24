@@ -1,8 +1,0 @@
-$def with (db, class_id, students, statusMsg, allowed)
-
-$if allowed:
-	These students are in your class:<br />
-	$for student in students:
-		$student['username']<br />
-$else:
-	$statusMsg

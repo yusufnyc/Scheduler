@@ -1,6 +1,12 @@
 $def with (session)
-
-$if session.loggedIn:
-	Hi
-$else:
-	Bye
+<html>
+  <head>
+    <title>test</title>
+  </head>
+    <body>
+    $if session.loggedIn:
+	    You are logged in!
+    $else:
+	    Please
+    </body>    
+</html>
