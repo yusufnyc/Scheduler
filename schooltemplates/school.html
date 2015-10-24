@@ -1,0 +1,10 @@
+$def with (session, school, createClassForm, classes)
+
+<form method="post">
+  $:createClassForm.render()
+</form>
+
+<ul>
+$for c in classes:
+  <li>$c['name'] taught by $c['teacher']. <a href="/school/join/$c['id']">Join now</a>.
+</ul>
