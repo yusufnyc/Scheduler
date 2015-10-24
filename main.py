@@ -5,6 +5,7 @@ urls=(
 	'/', 'Index',
 	'/login', 'Login',
 	'/register', 'Register',
+	'/add', 'Add',
 	'/logout', 'Logout',
 	'/sms', 'SMS'
 )
@@ -15,6 +16,7 @@ render=web.template.render('templates/')
 app=web.application(urls, globals())
 
 
+
 if web.config.get('_session') is None:
 	session=web.session.Session(app, web.session.DiskStore('sessions'), initializer={'username': '', 'loggedIn': False})
 	web.config._session=session
@@ -23,6 +25,40 @@ else:
 
 db=web.database(dbn='mysql', db='scheduler', user='root', pw='a')
 
+class Add:
+	addEvent=form.Form
+	def GET(self):
+		credentials = get_credentials()
+		http = credentials.authorize(httplib2.Http())
+		service = discovery.build('calendar', 'v3', http=http)
+
+def get_credentials():
+	"""Gets valid user credentials from storage.
+
+	If nothing has been stored, or if the stored credentials are invalid,
+	the OAuth2 flow is completed to obtain the new credentials.
+
+	Returns:
+		Credentials, the obtained credential.
+	"""
+	home_dir = os.path.expanduser('~')
+	credential_dir = os.path.join(home_dir, '.credentials')
+	if not os.path.exists(credential_dir):
+		os.makedirs(credential_dir)
+	credential_path = os.path.join(credential_dir,
+								   'calendar-python-quickstart.json')
+
+	store = oauth2client.file.Storage(credential_path)
+	credentials = store.get()
+	if not credentials or credentials.invalid:
+		flow = client.flow_from_clientsecrets(CLIENT_SECRET_FILE, SCOPES)
+		flow.user_agent = APPLICATION_NAME
+		if flags:
+			credentials = tools.run_flow(flow, store, flags)
+		else: # Needed only for compatability with Python 2.6
+			credentials = tools.run(flow, store)
+		print('Storing credentials to ' + credential_path)
+	return credentials
 
 class Index:
 	def GET(self):

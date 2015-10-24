@@ -1,12 +1,75 @@
 $def with (session)
 <html>
   <head>
-    <title>test</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Sceder</title>
+    <link rel="shortcut icon" href="favicon.ico"> 
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" integrity="sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==" crossorigin="anonymous"></script>
   </head>
     <body>
     $if session.loggedIn:
-	    You are logged in!
+	      <iframe src="https://www.google.com/calendar/embed?src=busterroni11%40gmail.com&ctz=America/New_York" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
     $else:
-	    Please
+	      <div class="main-header">
+          <div class="main-header-div">
+            <ul class="header-ul-left">
+              <li class="logo-li"><h1><a href="/">Sceder</a></h1></li>
+            </ul>
+            <ul class="header-ul-right">
+              <li class="modal-trigger-register-li"><button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#register-modal">Register</button></li>
+              <li class="modal-trigger-login-li"><button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#login-modal">Login</button></li>
+            </ul>
+          </div>
+        </div>
+        <div class="main-footer">
+          <div class="main-footer-div">
+            <div class="main-footer-1 footer-Links">
+              <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Contact</a></li>
+                <li><button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#register-modal">Register</button></li>
+                <li><button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#login-modal">Login</button></li>
+              </ul>
+            </div>
+            <div class="main-body main-home">
+              <div class="main-body-div main-home-div">
+              </div>
+            </div>
+            <div class="main-footer-2 footer-social">
+              <ul>
+                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                <li><a href="#"><i class="fa fa-youtube-play"></i></a></li>
+              </ul>
+            </div>
+            <div class="main-footer-3 footer-copy">
+              <p>&copy; 2015 Sceder. All Rights Reserved</p>
+            </div>
+          </div>
+        </div>
+        <div class="modal fade" id="register-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-register-body modal-body">
+                 Hello World!
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal fade" id="login-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-login-body modal-body">
+                 Hello World!
+              </div>
+            </div>
+          </div>
+        </div>
     </body>    
 </html>
