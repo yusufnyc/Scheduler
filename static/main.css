@@ -1,0 +1,205 @@
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  Official Stylesheet For Sceder
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+/*~~~~~~ Global ~~~~~~*/
+
+html, body {
+	font-family: 'Open Sans' !important;
+	color: #333;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: bold;
+}
+
+a {
+    color: #FF3D3D;
+    text-decoration: none;
+    -o-transition:200ms !important;
+    -ms-transition:200ms !important;
+    -moz-transition:200ms !important;
+    -webkit-transition:200ms !important;
+    /* ...and now for the proper property */
+    transition:200ms !important;
+}
+
+button {
+  -o-transition:200ms !important;
+    -ms-transition:200ms !important;
+    -moz-transition:200ms !important;
+    -webkit-transition:200ms !important;
+    /* ...and now for the proper property */
+    transition:200ms !important;
+}
+
+a:link {
+    color: #FF3D3D;
+    text-decoration: none;
+}
+
+a:visited {
+   color: #FF3D3D;
+   text-decoration: none;
+}
+
+a:hover {
+    color: #ff0000;
+    text-decoration: none;
+}
+
+a:active {
+    color: ##EC0000;
+    text-decoration: none;
+}
+
+/*~~~~~~~ End ~~~~~~~~*/
+
+/*~~~~~~ Header ~~~~~~*/
+
+.main-header {
+  width: 100%;
+}
+
+.main-header a, .main-header button {
+  color: #333 !important;
+  font-weight: normal !important;
+}
+
+.main-header-div {
+  padding: 12px 10px;
+  background-color: #FF3D3D;
+}
+
+@media (min-width: 1920px) {
+	.main-header-div {
+		max-width: 1920px;
+	}
+}
+
+.main-header-div ul, .header-ul-right li {
+  display: inline-block;
+}
+
+.header-ul-left {
+  margin-left: 30px;
+}
+
+.header-ul-left li h1 a {
+  font-size: 1.7rem;
+}
+
+.header-ul-right {
+  float: right;
+  margin-right: 30px;
+  vertical-align: top !important;
+  margin-top: -5px;
+}
+
+.header-ul-right li button, .footer-links li button {
+  padding: 0 !important;
+  margin: 0 !important;
+  border: none !important;
+  border-radius: 0 !important;
+  font-size: 1rem !important;
+}
+
+.header-ul-right li button {
+  padding: 7px 10px;
+  margin: 2px;
+  font-size: 0.9rem !important;
+  background-color: #ff3d3d !important;
+  border: 1px solid #333 !important;
+  outline: none !important;
+  border-radius: 3px !important;
+}
+
+.header-ul-right li button:last-child {
+  padding: 8.7px 10px !important;
+  margin-left: 5px !important;
+}
+
+.header-ul-right li button:hover {
+  background-color: #333 !important;
+  color: #fff !important;
+  border: 1px solid #333 !important;
+}
+
+.header-ul-right li button:active {
+  outline: none !important;
+}
+
+/*~~~~~~~ End ~~~~~~~~*/
+
+/*~~~~~~ Footer ~~~~~~*/
+
+.main-footer {
+  width: 100%;
+  text-align: center;
+}
+
+@media (min-width: 1920px) {
+	.main-footer-div {
+		max-width: 1920px;
+	}
+}
+
+.main-footer-div {
+  padding: 10px;
+  background-color: #ff3d3d;
+  margin-top: 50px;
+}
+
+.main-footer-div a {
+  color: #fff !important;
+}
+
+.main-footer-1 ul li, .main-footer-2 ul li {
+  display: inline-block;
+  padding: 5px 10px;
+}
+
+.main-footer-1 ul li a:hover, .main-footer-1 ul li button:hover, .main-footer-2 ul li a:hover {
+  color: #111 !important;
+}
+
+.main-footer a, .main-footer button {
+  color: #333 !important;
+}
+
+.main-footer-2 {
+  border-top: 1px solid #333;
+  border-bottom: 1px solid #333;
+  width: 80%;
+  text-align: center;
+  margin: 5px auto;
+}
+
+.main-footer-1, .main-footer-2, .main-footer-3 {
+  padding: 10px 10px;
+}
+
+.footer-links button {
+  background-color: #ff3d3d !important;
+}
+
+.footer-social i {
+  font-size: 1.2rem !important;
+}
+
+/*~~~~~~~ End ~~~~~~~~*/
+
+/*~~~~~~ Home Pre ~~~~~~*/
+
+
+/*~~~~~~~ End ~~~~~~~~*/
+
+/*~~~~~~ Home Post ~~~~~~*/
+
+
+/*~~~~~~~ End ~~~~~~~~*/
+
+/*~~~~~~ Register Modal ~~~~~~*/
+
+
+/*~~~~~~~ End ~~~~~~~~*/
