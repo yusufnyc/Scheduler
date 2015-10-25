@@ -16,8 +16,46 @@ $def with (session)
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" integrity="sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==" crossorigin="anonymous"></script>
   </head>
     <body>
+        <div class="modal fade" id="about-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+          <div class="modal-about-dialog modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-about-body modal-form modal-body">
+                <h2><i class="fa fa-shield"></i>About</h2> 
+                <ul>
+                  <li><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam malesuada et tortor luctus pretium. Cras ac elit massa. Cras nec diam sed augue suscipit placerat. Sed ornare felis semper, efficitur risus at.</p></li>
+                  <li><img src="http://content.internetvideoarchive.com/content/photos/1428/06000501_.jpg"></li>
+                  <li><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam malesuada et tortor luctus pretium. Cras ac elit massa. Cras nec diam sed augue suscipit placerat. Sed ornare felis semper, efficitur risus at.</p></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
     $if session.loggedIn:
-	      Hello World!
+	      <div class="main-header">
+          <div class="main-header-div">
+            <ul class="header-ul-left">
+              <li class="logo-li"><h1><a href="/">Scedler</a></h1></li>
+            </ul>
+            <ul class="header-ul-right">
+              <li class="modal-trigger-register-li"><button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#register-modal">Register</button></li>
+              <li class="header-login-btn"><button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#login-modal">Login</button></li>
+            </ul>
+          </div>
+        </div>
+        <div class="modal fade" id="contact-post-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-contact-body modal-form modal-body">
+                 <h2><i class="fa fa-space-shuttle"></i>Contact</h2>
+                 <ul>
+                  <li><input type="text" placeholder="Subject"></li>
+                  <li><textarea type="text" placeholder="Message"></textarea></li>
+                  <li><input type="submit" placeholder="Send"></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
     $else:
 	      <div class="main-header">
           <div class="main-header-div">
@@ -115,44 +153,16 @@ $def with (session)
           </div>
         </div>
         <div class="modal fade" id="contact-pre-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-          <div class="modal-contact-pre-dialog modal-dialog" role="document">
+          <div class="modal-dialog" role="document">
             <div class="modal-content">
-              <div class="modal-login-body modal-form modal-body">
+              <div class="modal-contact-body modal-form modal-body">
                  <h2><i class="fa fa-space-shuttle"></i>Contact</h2>
                  <ul>
-                  <li><input type="text" placeholder="Full Name..."></li>
+                  <li><input type="text" placeholder="Full Name"></li>   
                   <li><input type="text" placeholder="Email"></li>
                   <li><input type="text" placeholder="Subject"></li>
                   <li><textarea type="text" placeholder="Message"></textarea></li>
                   <li><input type="submit" placeholder="Send"></li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="modal fade" id="contact-post-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-          <div class="modal-dialog" role="document">
-            <div class="modal-content">
-              <div class="modal-login-body modal-form modal-body">
-                 <h2><i class="fa fa-space-shuttle"></i>Contact</h2>
-                 <ul>
-                  <li><input type="text" placeholder="Subject"></li>
-                  <li><textarea type="text" placeholder="Message"></textarea></li>
-                  <li><input type="submit" placeholder="Send"></li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="modal fade" id="about-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-          <div class="modal-about-dialog modal-dialog" role="document">
-            <div class="modal-content">
-              <div class="modal-about-body modal-form modal-body">
-                <h2><i class="fa fa-shield"></i>About</h2> 
-                <ul>
-                  <li><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam malesuada et tortor luctus pretium. Cras ac elit massa. Cras nec diam sed augue suscipit placerat. Sed ornare felis semper, efficitur risus at.</p></li>
-                  <li><img src="http://content.internetvideoarchive.com/content/photos/1428/06000501_.jpg"></li>
-                  <li><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam malesuada et tortor luctus pretium. Cras ac elit massa. Cras nec diam sed augue suscipit placerat. Sed ornare felis semper, efficitur risus at.</p></li>
                 </ul>
               </div>
             </div>
