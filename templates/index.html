@@ -4,7 +4,7 @@ $def with (session)
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Sceder</title>
+    <title>Scedler</title>
     <link rel="shortcut icon" href="favicon.ico"> 
     <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
     <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
@@ -22,7 +22,7 @@ $def with (session)
 	      <div class="main-header">
           <div class="main-header-div">
             <ul class="header-ul-left">
-              <li class="logo-li"><h1><a href="/">Sceder</a></h1></li>
+              <li class="logo-li"><h1><a href="/">Scedler</a></h1></li>
             </ul>
             <ul class="header-ul-right">
               <li class="modal-trigger-register-li"><button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#register-modal">Register</button></li>
@@ -32,16 +32,42 @@ $def with (session)
         </div>
         <div class="main-body main-home">
           <div class="main-body-div main-home-div">
-
+            <div class="home-1 home-sec">
+              <ul>
+                <li><img src="http://content.internetvideoarchive.com/content/photos/1428/06000501_.jpg"></li>
+                <li>
+                  <ul>
+                    <li><h3>Title Goes Here Now</h3></li>
+                    <li><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam malesuada et tortor luctus pretium. Cras ac elit massa. Cras nec diam sed augue suscipit placerat. Sed ornare felis semper, efficitur risus at, gravida metus. Sed suscipit id felis in lobortis. Cras sed lectus pulvinar, imperdiet felis ac, placerat nisi. Duis gravida, ante nec hendrerit maximus, nisi urna porta augue, id commodo ex est in mauris. Duis quis neque finibus, imperdiet metus eget, commodo velit.</p></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+            <div class="home-2 home-sec">
+              <ul>
+                <li>
+                  <ul>
+                    <li><img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTn8Y3kAUoumHEfAgmexwW4XtWGm_O8XGZYmASkRy0Df79iJkLp179KOZiW"></li>
+                    <li><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam malesuada et tortor luctus pretium. Cras ac elit massa.</p></li>
+                  </ul>
+                </li>
+                <li>
+                  <ul>
+                    <li><img src="http://www.aal-europe.eu/wp-content/uploads/2014/10/yellow.jpg"></li>
+                    <li><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam malesuada et tortor luctus pretium. Cras ac elit massa.</p></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
         <div class="main-footer">
           <div class="main-footer-div">
             <div class="main-footer-1 footer-Links">
               <ul>
-                <li><a href="">Home</a></li>
-                <li><a href="">About</a></li>
-                <li><a href="">Contact</a></li>
+                <li><a href="/">Home</a></li>
+                <li><a href="/about">About</a></li>
+                <li><a href="/contact">Contact</a></li>
                 <li><button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#register-modal">Register</button></li>
                 <li><button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#login-modal">Login</button></li>
               </ul>
@@ -55,15 +81,21 @@ $def with (session)
               </ul>
             </div>
             <div class="main-footer-3 footer-copy">
-              <p>&copy; 2015 Sceder. All Rights Reserved</p>
+              <p>&copy; 2015 Scedler. All Rights Reserved</p>
             </div>
           </div>
         </div>
         <div class="modal fade" id="register-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
           <div class="modal-dialog" role="document">
             <div class="modal-content">
-              <div class="modal-register-body modal-body">
-                 Hello World!
+              <div class="modal-register-body modal-form modal-body">
+                <h2><i class="fa fa-globe"></i>Register</h2>
+                <ul>
+                  <li><input type="text" placeholder="Full Name..."></li>
+                  <li><input type="text" placeholder="Email..."></li>
+                  <li><input type="text" placeholder="Password..."></li>
+                  <li><input type="submit" placeholder="Create"></li>
+                </ul>
               </div>
             </div>
           </div>
@@ -71,8 +103,13 @@ $def with (session)
       <div class="modal fade" id="login-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
           <div class="modal-dialog" role="document">
             <div class="modal-content">
-              <div class="modal-register-body modal-body">
-                 Hello World!
+              <div class="modal-login-body modal-form modal-body">
+                 <h2><i class="fa fa-anchor"></i>Login</h2>
+                 <ul>
+                  <li><input type="text" placeholder="Email..."></li>
+                  <li><input type="text" placeholder="Password..."></li>
+                  <li><input type="submit" placeholder="Sign In"></li>
+                </ul>
               </div>
             </div>
           </div>

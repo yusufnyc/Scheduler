@@ -9,10 +9,6 @@ html, body {
 	color: #333;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  font-weight: bold;
-}
-
 a {
     color: #FF3D3D;
     text-decoration: none;
@@ -33,6 +29,10 @@ button {
     transition:200ms !important;
 }
 
+p {
+  color: #555;
+}
+
 a:link {
     color: #FF3D3D;
     text-decoration: none;
@@ -49,7 +49,7 @@ a:hover {
 }
 
 a:active {
-    color: ##EC0000;
+    color: #EC0000;
     text-decoration: none;
 }
 
@@ -93,7 +93,7 @@ a:active {
   float: right;
   margin-right: 30px;
   vertical-align: top !important;
-  margin-top: -5px;
+  margin-top: -6px;
 }
 
 .header-ul-right li button, .footer-links li button {
@@ -105,7 +105,7 @@ a:active {
 }
 
 .header-ul-right li button {
-  padding: 7px 10px;
+  padding: 8px 10px;
   margin: 2px;
   font-size: 0.9rem !important;
   background-color: #ff3d3d !important;
@@ -115,7 +115,7 @@ a:active {
 }
 
 .header-ul-right li button:last-child {
-  padding: 8.7px 10px !important;
+  padding: 9.7px 10px !important;
   margin-left: 5px !important;
 }
 
@@ -187,10 +187,98 @@ a:active {
   font-size: 1.2rem !important;
 }
 
+.main-footer-3 p {
+  color: #333 !important;  
+}
+
 /*~~~~~~~ End ~~~~~~~~*/
 
 /*~~~~~~ Home Pre ~~~~~~*/
 
+.home-1 {
+  width: 70%;
+  margin: 80px auto 0px auto;
+  padding-bottom: 50px;
+  border-bottom: 1px solid #888;
+}
+
+.home-1 ul > li:first-child {
+  display: 30%;
+}
+
+.home-1 ul > li:first-child img {
+  height: 240px;
+  width: 100%;
+  border-radius: 8px;
+}
+
+.home-1 ul > li:last-child {
+  width: 60%;
+  margin-left: 2%;
+  vertical-align: top;
+  line-height: 1.8;
+}
+
+.home-1 ul > li h3 {
+  font-size: 1.5rem;
+  margin-top: -10px;
+  margin-bottom: 5px;
+}
+
+.home-1 ul > li > ul > li {
+  width: 100% !important;
+  margin: 0 !important;
+}
+
+.home-1 ul > li {
+  display: inline-block;
+}
+
+.home-1 ul > li > ul > li {
+  display: block !important;
+}
+
+
+
+.home-2 {
+  width: 70%;
+  margin: 50px auto 0px auto;
+  padding-bottom: 50px;
+}
+
+.home-2 ul > li {
+  display: inline-block;
+}
+
+.home-2 ul > li:first-child {
+  width: 48%;
+  margin-left: 2%;
+  vertical-align: top;
+  line-height: 1.8;
+}
+
+.home-2 ul > li:last-child {
+  width: 47%;
+  margin-left: 2%;
+  vertical-align: top;
+  line-height: 1.8;
+}
+
+.home-2 ul > li > ul > li:first-child {
+  width: 30% !important;
+  margin-right: 2%;
+}
+
+.home-2 ul > li > ul > li:first-child img {
+  height: 135px;
+  width: 135px;
+  border-radius: 50%;
+}
+
+.home-2 ul > li > ul > li:last-child {
+  width: 60% !important;
+  margin-top: 10px;
+}
 
 /*~~~~~~~ End ~~~~~~~~*/
 
@@ -199,7 +287,76 @@ a:active {
 
 /*~~~~~~~ End ~~~~~~~~*/
 
-/*~~~~~~ Register Modal ~~~~~~*/
+/*~~~~~~ Form Modal ~~~~~~*/
 
+.modal-dialog {
+  margin-top: 5%;
+}
 
+.modal-content {
+  min-height: 400px;
+}
+
+.modal-body {
+  padding: 50px;
+}
+
+.modal-form {
+  width: 80% !important;
+  margin: 0 auto;
+}
+
+.modal-form ul li {
+  margin: 10px 0;
+}
+
+.modal-form ul li input {
+  width: 100% !important;
+  line-height: 25px;
+}
+
+.modal-form ul li input[type="text"] {
+  padding: 10px;
+  color: #d3d3d3 !important;
+  border: 1px solid #d3d3d3 !important;
+  outline: none !important;
+  border-radius: 4px;
+}
+
+.modal-form ul li input[type="submit"] {
+  margin-top: 10px;
+  padding: 10px 0 !important;
+  outline: none !important;
+  border: 1px solid #ff3d3d;
+  background-color: #ff3d3d !important;
+  color: #fff !important;
+  border-radius: 4px;
+}
+
+.modal-form ul li input[type="submit"]:hover {
+  background-color: #ff0000 !important;
+}
+
+.modal-form ul li input[type="submit"]:hover {
+  background-color: #ec0000 !important;
+}
+
+.modal-form h2 {
+  margin-bottom: 15px;
+  font-size: 1.4rem;
+}
+
+.modal-form h2 i {
+  margin-right: 12px;
+  background-color: #ff3d3d !important;
+  color: #fff !important;
+  padding: 8px 10px;
+  font-size: 1.1rem;
+  border-radius: 4px;
+  
+}
+
+.modal-login-body {
+  margin-top: 30px;
+}
 /*~~~~~~~ End ~~~~~~~~*/
