@@ -53,6 +53,10 @@ a:active {
     text-decoration: none;
 }
 
+input, input:focus, button, button:focus, select, select:focus, textarea, textarea:focus {
+  outline: none !important;
+}
+
 /*~~~~~~~ End ~~~~~~~~*/
 
 /*~~~~~~ Header ~~~~~~*/
@@ -127,6 +131,49 @@ a:active {
 
 .header-ul-right li button:active {
   outline: none !important;
+}
+
+#drop-down {
+  position: relative !important;
+  padding-bottom: 30px;
+}
+
+#drop-nav {
+  position: absolute !important;
+  display: none;
+  margin-left: -160px;
+  padding: 10px 10px 10px 10px;
+  background-color: #333;
+  margin-top: 18px;
+}
+
+#drop-nav li {
+  padding: 20px 120px 20px 5px !important;
+  width: 185px;
+}
+
+#drop-nav li:hover {
+  background-color: #666;
+}
+
+#drop-nav li a {
+  color: #fff !important;
+  padding: 10px;
+  font-size: 0.9rem;
+}
+
+#drop-down:hover > #drop-nav {
+  display: block !important;
+}
+
+#drop-nav li:first-child::before {
+	 color: #333;
+   content: '▲';
+   float: right;
+   margin: 0 0 0;
+   font-size: 1.3rem;
+   margin-top: -42px;
+   margin-right: -116px;
 }
 
 /*~~~~~~~ End ~~~~~~~~*/
@@ -383,6 +430,28 @@ a:active {
   border-radius: 20px;
 }
 
+.date-fields > ul > li {
+  display: inline-block;
+}
 
+.date-fields > ul > li select {
+  background-color: #ff3d3d !important;
+  color: #fff !important;
+  border: #ff3d3d;
+  padding: 5px 10px;
+  border-radius: 4px;
+}
+
+.date-fields > ul > li select, .date-fields > ul > li select option {
+  outline: none !important;
+}
+
+.date-fields > ul > li:last-child select {
+  margin-left: 10px;
+}
+
+.header-ul-right-post li i {
+  margin-left: 15px;
+}
 
 /*~~~~~~~ End ~~~~~~~~*/

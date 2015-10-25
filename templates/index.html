@@ -31,15 +31,129 @@ $def with (session)
           </div>
         </div>
     $if session.loggedIn:
-	      <div class="main-header">
+        <div class="main-header">
           <div class="main-header-div">
             <ul class="header-ul-left">
               <li class="logo-li"><h1><a href="/">Scedler</a></h1></li>
             </ul>
-            <ul class="header-ul-right">
-              <li class="modal-trigger-register-li"><button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#register-modal">Register</button></li>
-              <li class="header-login-btn"><button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#login-modal">Login</button></li>
+            <ul class="header-ul-right header-ul-right-post">
+              <li class=""><button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#new-event-modal">New Event</button></li>
+              <li id="drop-down">
+                <a href=""><i class="fa fa-caret-down"></i></a>
+                <ul id="drop-nav">
+                  <li><a href="">About</a></li>
+                  <li><a href="">Contact</a></li>
+                  <li><a href="">Logout</a></li>
+                </ul>
+              </li>
             </ul>
+          </div>
+        </div>
+        <div class="main-footer">
+          <div class="main-footer-div">
+            <div class="main-footer-1 footer-Links">
+              <ul>
+                <li><a href="/">Home</a></li>
+                <li><button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#about-modal">About</button></li>
+                <li><button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#contact-post-modal">Contact</button></li>
+                <li><button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#new-event-modal">New Event</button></li>
+              </ul>
+            </div>
+            <div class="main-footer-2 footer-social">
+              <ul>
+                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                <li><a href="#"><i class="fa fa-youtube-play"></i></a></li>
+              </ul>
+            </div>
+            <div class="main-footer-3 footer-copy">
+              <p>&copy; 2015 Scedler. All Rights Reserved</p>
+            </div>
+          </div>
+        </div>
+      
+        <div class="modal fade" id="new-event-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-contact-body modal-form modal-body">
+                 <h2><i class="fa fa-cloud"></i>New Event</h2>
+                 <ul>
+                   <li><input type="text" placeholder="Title"></li>
+                   <li class="date-fields">
+                     <ul>
+                       <li>
+                         <select>
+                           <option value="january">January</option>
+                           <option value="february">February</option>
+                           <option value="march">March</option>
+                           <option value="april">April</option>
+                           <option value="May">May</option>
+                           <option value="june">June</option>
+                           <option value="july">July</option>
+                           <option value="august">August</option>
+                           <option value="september">September</option>
+                           <option value="october">October</option>
+                           <option value="novemeber">November</option>
+                           <option value="december">December</option>
+                        </select>
+                       </li> 
+                       <li>
+                         <select>
+                           <option value="1">1</option>
+                           <option value="1">2</option>
+                           <option value="1">3</option>
+                           <option value="1">4</option>
+                           <option value="1">5</option>
+                           <option value="1">6</option>
+                           <option value="1">7</option>
+                           <option value="1">8</option>
+                           <option value="1">9</option>
+                           <option value="1">10</option>
+                           <option value="1">11</option>
+                           <option value="1">12</option>
+                           <option value="1">13</option>
+                           <option value="1">14</option>
+                           <option value="1">15</option>
+                           <option value="1">16</option>
+                           <option value="1">17</option>
+                           <option value="1">18</option>
+                           <option value="1">19</option>
+                           <option value="1">20</option>
+                           <option value="1">21</option>
+                           <option value="1">22</option>
+                           <option value="1">23</option>
+                           <option value="1">24</option>
+                           <option value="1">25</option>
+                           <option value="1">26</option>
+                           <option value="1">27</option>
+                           <option value="1">28</option>
+                           <option value="1">29</option>
+                           <option value="1">30</option>
+                           <option value="1">31</option>
+                        </select>
+                       </li> 
+                       <li>
+                         <select>
+                           <option value="2015">2015</option>
+                           <option value="2016">2016</option>
+                        </select>
+                       </li> 
+                       <li>
+                         <select>
+                           <!-- !!! Time !!! -->
+                           <option value="6">6am</option>
+                           <option value="6">12am</option>
+                           <option value="6">10pm</option>
+                        </select>
+                       </li> 
+                     </ul>
+                   </li>
+                  <li><textarea type="text" placeholder="Description"></textarea></li>
+                  <li><input type="submit" placeholder="Send"></li>
+                </ul>
+              </div>
+            </div>
           </div>
         </div>
         <div class="modal fade" id="contact-post-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
@@ -57,7 +171,7 @@ $def with (session)
           </div>
         </div>
     $else:
-	      <div class="main-header">
+        <div class="main-header">
           <div class="main-header-div">
             <ul class="header-ul-left">
               <li class="logo-li"><h1><a href="/">Scedler</a></h1></li>
