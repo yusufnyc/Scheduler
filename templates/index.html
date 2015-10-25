@@ -17,7 +17,7 @@ $def with (session)
   </head>
     <body>
     $if session.loggedIn:
-	      <iframe src="https://www.google.com/calendar/embed?src=busterroni11%40gmail.com&ctz=America/New_York" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+	      Hello World!
     $else:
 	      <div class="main-header">
           <div class="main-header-div">
@@ -66,8 +66,8 @@ $def with (session)
             <div class="main-footer-1 footer-Links">
               <ul>
                 <li><a href="/">Home</a></li>
-                <li><a href="/about">About</a></li>
-                <li><a href="/contact">Contact</a></li>
+                <li><button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#about-modal">About</button></li>
+                <li><button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#contact-pre-modal">Contact</button></li>
                 <li><button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#register-modal">Register</button></li>
                 <li><button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#login-modal">Login</button></li>
               </ul>
@@ -100,15 +100,59 @@ $def with (session)
             </div>
           </div>
         </div>
-      <div class="modal fade" id="login-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal fade" id="login-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
           <div class="modal-dialog" role="document">
             <div class="modal-content">
               <div class="modal-login-body modal-form modal-body">
-                 <h2><i class="fa fa-anchor"></i>Login</h2>
+                 <h2><i class="fa fa-bell"></i>Login</h2>
                  <ul>
                   <li><input type="text" placeholder="Email..."></li>
                   <li><input type="text" placeholder="Password..."></li>
                   <li><input type="submit" placeholder="Sign In"></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal fade" id="contact-pre-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+          <div class="modal-contact-pre-dialog modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-login-body modal-form modal-body">
+                 <h2><i class="fa fa-space-shuttle"></i>Contact</h2>
+                 <ul>
+                  <li><input type="text" placeholder="Full Name..."></li>
+                  <li><input type="text" placeholder="Email"></li>
+                  <li><input type="text" placeholder="Subject"></li>
+                  <li><textarea type="text" placeholder="Message"></textarea></li>
+                  <li><input type="submit" placeholder="Send"></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal fade" id="contact-post-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-login-body modal-form modal-body">
+                 <h2><i class="fa fa-space-shuttle"></i>Contact</h2>
+                 <ul>
+                  <li><input type="text" placeholder="Subject"></li>
+                  <li><textarea type="text" placeholder="Message"></textarea></li>
+                  <li><input type="submit" placeholder="Send"></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal fade" id="about-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+          <div class="modal-about-dialog modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-about-body modal-form modal-body">
+                <h2><i class="fa fa-shield"></i>About</h2> 
+                <ul>
+                  <li><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam malesuada et tortor luctus pretium. Cras ac elit massa. Cras nec diam sed augue suscipit placerat. Sed ornare felis semper, efficitur risus at.</p></li>
+                  <li><img src="http://content.internetvideoarchive.com/content/photos/1428/06000501_.jpg"></li>
+                  <li><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam malesuada et tortor luctus pretium. Cras ac elit massa. Cras nec diam sed augue suscipit placerat. Sed ornare felis semper, efficitur risus at.</p></li>
                 </ul>
               </div>
             </div>

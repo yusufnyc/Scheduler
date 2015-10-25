@@ -323,6 +323,16 @@ a:active {
   border-radius: 4px;
 }
 
+.modal-form ul li textarea[type="text"] {
+  padding: 10px;
+  color: #d3d3d3 !important;
+  border: 1px solid #d3d3d3 !important;
+  outline: none !important;
+  border-radius: 4px;
+  height: 150px;
+  width: 100%;
+}
+
 .modal-form ul li input[type="submit"] {
   margin-top: 10px;
   padding: 10px 0 !important;
@@ -353,10 +363,26 @@ a:active {
   padding: 8px 10px;
   font-size: 1.1rem;
   border-radius: 4px;
-  
 }
 
 .modal-login-body {
   margin-top: 30px;
 }
+
+.modal-contact-pre-dialog, .modal-about-dialog {
+  margin-top: 30px !important;
+}
+
+.modal-about-body p {
+  line-height: 1.8;
+}
+
+.modal-about-body img {
+  height: 200px;
+  width: 100%;
+  border-radius: 20px;
+}
+
+
+
 /*~~~~~~~ End ~~~~~~~~*/
